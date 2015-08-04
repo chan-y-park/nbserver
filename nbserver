@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if [ "$1" = "start" ]; then
+    ipython notebook --ipython-dir=.ipython --NotebookApp.profile=$2"_nbserver" &> logs/$2"_nbserver.txt" &
+    echo $! > logs/$2_"nbserver_pid.txt"
+elif [ "$1" = "stop" ]; then
+    pid=$(head -n 1 "logs/$2_nbserver_pid.txt")
+    kill $pid
+else
+    echo "Usage:"
+    echo "nbserver start PROFILE"
+    echo "nbserver stop PROFILE"
+fi
