@@ -1,6 +1,7 @@
 #!/bin/bash
 
 if [ "$1" = "start" ]; then
+    #ipython notebook --ipython-dir=.ipython --notebook-dir=/home/chan/nbserver/$2 --NotebookApp.profile=$2"_nbserver" &> logs/$2"_nbserver.txt" &
     ipython notebook --ipython-dir=.ipython --NotebookApp.profile=$2"_nbserver" &> logs/$2"_nbserver.txt" &
     echo $! > logs/$2_"nbserver_pid.txt"
 elif [ "$1" = "stop" ]; then

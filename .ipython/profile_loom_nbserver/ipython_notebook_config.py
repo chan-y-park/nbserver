@@ -111,6 +111,7 @@ c.NotebookApp.base_url = '/loom'
 
 # The directory to use for notebooks and kernels.
 # c.NotebookApp.notebook_dir = u''
+#c.NotebookApp.notebook_dir = u'/home/chan/nbserver/loom'
 
 # The kernel manager class to use.
 # c.NotebookApp.kernel_manager_class = <class 'IPython.html.services.kernels.kernelmanager.MappingKernelManager'>

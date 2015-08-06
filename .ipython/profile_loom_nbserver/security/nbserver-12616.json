@@ -1,9 +1,0 @@
-{
-  "secure": false, 
-  "url": "http://localhost:8888/loom/", 
-  "hostname": "localhost", 
-  "pid": 12616, 
-  "base_url": "/loom/", 
-  "notebook_dir": "/home/chan/nbserver", 
-  "port": 8888
-}
